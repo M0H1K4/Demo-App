@@ -5,23 +5,23 @@ import ProjectsSidebar from "./components/ProjectsSidebar";
 
 function App() {
   const [projectsState, setProjectsState] = useState({
-    selectedProjectId:undefined,
-    projects: []
+    selectedProjectId: undefined,
+    projects: [],
   });
 
-  function handleStartAddProject(){
-    setProjectsState(prevState => {
-      return{
+  function handleStartAddProject() {
+    setProjectsState((prevState) => {
+      return {
         ...prevState,
         selectedProjectId: null,
-      }
+      };
     });
   }
 
   return (
     <main className="h-screen my-8 flex gap-8">
-      <ProjectsSidebar />
-      <NoProjectSelected />
+      <ProjectsSidebar onStartAddProject={handleStartAddProject} />
+      <NoProjectSelected onStartAddProject={handleStartAddProject} />
     </main>
   );
 }
