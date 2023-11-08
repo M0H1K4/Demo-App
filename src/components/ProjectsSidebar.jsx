@@ -8,7 +8,7 @@ export default function ProjectsSidebar({onStartAddProject}) {
         Your Projects
       </h2>
       <div>
-        <Button onClick={onStartAddProject}>Add Project</Button>
+        <Button onClick={onStartAddProject}> +Add Project</Button>
       </div>
     </aside>
   );
