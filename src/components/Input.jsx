@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Input() {
+export default function Input({ label,textarea, ...props }) {
   return (
-    <div>
-      
-    </div>
+    <p>
+      <label ></label>
+      {textarea ? <textarea {...props} /> : <input {...props}/>}
+    </p>
   )
 }
