@@ -25,7 +25,7 @@ export default function NewProject({ onAdd }) {
       <menu className="flex items-center justify-end gap-4 my-4">
         <li>
           <button className="text-stone-800 hover:text-stone-950">
-            Cancel from laptop
+            Cancel!
           </button>
         </li>
         <li>
