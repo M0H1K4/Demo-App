@@ -1,1 +1,1 @@
-# Demo-App for managing Projects and 
+# Demo-App 
